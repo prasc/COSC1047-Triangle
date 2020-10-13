@@ -3,14 +3,15 @@ public class Triangle extends GeometricObject{
     private double side2 = 1.0;
     private double side3 = 1.0;
 
-    public Triangle() {
+    public Triangle() throws IllegalTriangleException {
         this(0, 0, 0);
     }
 
-    public Triangle(double side1, double side2, double side3) {
-        this.side1 = side1;
-        this.side2 = side2;
-        this.side3 = side3;
+    public Triangle(double side1, double side2, double side3) throws IllegalTriangleException{
+               this.side1 = side1;
+               this.side2 = side2;
+               this.side3 = side3;
+
     }
 
     public void side1(double side1) {
