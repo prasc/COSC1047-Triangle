@@ -29,6 +29,7 @@ public class Main {
 
         try {
             Triangle triangle = new Triangle(arrayOfInts[0], arrayOfInts[1], arrayOfInts[2]);
+            System.out.println(triangle);
         } catch (IllegalTriangleException ex){
             System.out.println(ex + "The triangle cannot be created");
         }
